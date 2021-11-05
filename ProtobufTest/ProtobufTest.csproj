@@ -66,6 +66,9 @@
     <ItemGroup>
       <None Include="packages.config" />
     </ItemGroup>
+    <ItemGroup>
+      <Content Include="message.proto" />
+    </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <Import Project="..\packages\Google.Protobuf.Tools.3.19.1\build\Google.Protobuf.Tools.targets" Condition="Exists('..\packages\Google.Protobuf.Tools.3.19.1\build\Google.Protobuf.Tools.targets')" />
     <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
