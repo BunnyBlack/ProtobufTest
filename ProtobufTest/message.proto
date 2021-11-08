@@ -1,7 +1,18 @@
 ﻿syntax = "proto3";
 
+// SearchRequest represents a search query, with pagination options to
+// indicate which results to include in the response
 message SearchRequest {
-    string query =  1;
+    string query = 1;
     int32 page_number = 2;
     int32 result_per_page = 3;
+}
+
+message SearchResponse {
+    // ...
+}
+
+message Foo {
+    reserved 2, 15, 9 to 11;
+    reserved foo, bar;
 }
