@@ -27,8 +27,15 @@ message Foo {
     reserved "foo", "bar";
 }
 
+message Foo2 {
+    enum Foo {
+        reserved 2, 15, 9 to 11, 40 to max;
+        None = 0;
+    }
+}
+
 message MyMessage1 {
-    enum EnumAllowAlias{
+    enum EnumAllowAlias {
         option allow_alias = true;
         UNKNOWN = 0;
         STARTED = 1;
