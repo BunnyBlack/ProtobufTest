@@ -16,6 +16,13 @@ message SearchRequest {
         VIDEO = 6;
     }
     Corpus corpus = 4;
+    repeated Result result = 5;
+}
+
+message Result {
+    string url = 1;
+    string title = 2;
+    repeated string snippets = 3;
 }
 
 message SearchResponse {
