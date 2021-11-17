@@ -1,5 +1,6 @@
 ﻿syntax = "proto3";
 
+import "google/protobuf/any.proto";
 // SearchRequest represents a search query, with pagination options to
 // indicate which results to include in the response
 message SearchRequest {
@@ -54,4 +55,9 @@ message MyMessage2 {
         UNKNOWN = 0;
         STARTED = 1;
     }
+}
+
+message ErrorStatus {
+    string message = 1;
+    repeated google.protobuf.Any details = 2;
 }
