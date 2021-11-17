@@ -61,3 +61,14 @@ message ErrorStatus {
     string message = 1;
     repeated google.protobuf.Any details = 2;
 }
+
+message SimpleMessage {
+    oneof test_oneof {
+        string name = 4;
+        SubMessage sub_message = 9;
+    }
+}
+
+message SubMessage {
+    
+}
