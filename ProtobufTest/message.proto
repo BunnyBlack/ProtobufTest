@@ -77,3 +77,9 @@ message Project {
 message SubMessage {
     
 }
+
+package Foo.bar;
+option csharp_namespace = "Foo.bar";
+message Open {
+    
+}

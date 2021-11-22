@@ -1,3 +1,10 @@
-﻿message TestRequest {
+﻿syntax = "proto3";
+import "message.proto";
+
+message TestRequest {
+    Foo.bar.Open open = 1;
+}
+
+message Open {
     
 }
