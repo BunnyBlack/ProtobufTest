@@ -67,6 +67,11 @@ message SimpleMessage {
         string name = 4;
         SubMessage sub_message = 9;
     }
+    map<string, Project> projects = 3;
+}
+
+message Project {
+    
 }
 
 message SubMessage {
