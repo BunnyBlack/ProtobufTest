@@ -83,3 +83,7 @@ option csharp_namespace = "Foo.bar";
 message Open {
     
 }
+
+service SearchService {
+    rpc Search(SearchRequest) returns (SearchResponse);
+}
