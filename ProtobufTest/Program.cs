@@ -1,4 +1,5 @@
 ﻿using System;
+using Foo.bar;
 
 namespace ProtobufTest
 {

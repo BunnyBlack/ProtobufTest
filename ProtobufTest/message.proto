@@ -71,19 +71,23 @@ message SimpleMessage {
 }
 
 message Project {
-    
+
 }
 
 message SubMessage {
-    
+
 }
 
 package Foo.bar;
 option csharp_namespace = "Foo.bar";
 message Open {
-    
+
 }
 
 service SearchService {
     rpc Search(SearchRequest) returns (SearchResponse);
+}
+
+message SongServerRequest {
+    string song_name = 1;
 }
