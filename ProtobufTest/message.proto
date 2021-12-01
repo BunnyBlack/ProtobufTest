@@ -91,3 +91,9 @@ service SearchService {
 message SongServerRequest {
     string song_name = 1;
 }
+
+enum FooBar {
+    FOO_BAR_UNSPECIFIED = 0;
+    FOO_BAR_FIRST_VALUE = 1;
+    FOO_BAR_SECOND_VALUE = 2;
+}
