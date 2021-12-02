@@ -97,3 +97,7 @@ enum FooBar {
     FOO_BAR_FIRST_VALUE = 1;
     FOO_BAR_SECOND_VALUE = 2;
 }
+
+message Test1 {
+    optional int32 a = 1;
+}
