@@ -1,10 +1,5 @@
-﻿syntax = "proto3";
-import "message.proto";
+﻿syntax = "proto2";
 
-message TestRequest {
-    Foo.bar.Open open = 1;
-}
-
-message Open {
-    
+message Test4 {
+    repeated int32 d = 4[packed = true];
 }
